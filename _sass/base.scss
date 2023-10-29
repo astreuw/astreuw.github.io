@@ -153,13 +153,35 @@ main p img {
 }
 
 footer {
-  margin-top: 50px;
+  border: 0px;
+  background: transparent url("/assets/img/hr-black.png") center center repeat-x;
+  height: 3px;
   margin-bottom: 50px;
+  margin: 30px 0px 60px 0px;
+  outline: none;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.post h1, .post h2, .post h3 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--base-color);
+}
+
+.post .header {
   text-align: center;
 }
 
 .post .header h1 {
+  border-bottom: none;
+  margin-top: 10px;
   margin-bottom: 0px;
+}
+
+.post .header .tldr {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
@@ -257,8 +279,9 @@ padding: 15px;
 }
 
 .language-plaintext {
-  background-color: #949494;
-  color: #0c0c0f;
+  background-color: var(--base-color);
+  border-radius: 3px;
+  color: #ff9446;
   padding-left: 5px;
   padding-right: 5px;
 }

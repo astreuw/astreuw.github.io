@@ -5,10 +5,6 @@ image: /assets/img/anti-debugging-intro.png
 description: 'O primeiro episódio da série "The Debug Breaker", série essa focada no compartilhamento de técnicas de anti-debugging voltadas ao desenvolvimento de malwares. Esse primeiro artigo visa introduzir sobre a análise estática e dinâmica de binários, funcionamento interno dos debuggers (em especial breakpoints) e técnicas de anti-debugging através de interações com essas aplicações.'
 ---
 
-# TL;DR
-
-{{ page.description }}
-
 # Introdução
 
 O mundo da cibersegurança evolui a cada dia, com inúmeras vulnerabilidades e mecanismos de defesa surgindo a todo instante. Como costumam dizer, é uma “briga de gato e rato”, onde por um lado pesquisadores buscam proteger sistemas, do outro *malfeitores* buscam por meios de quebrá-los.
