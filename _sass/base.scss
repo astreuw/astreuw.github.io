@@ -163,6 +163,14 @@ footer {
   text-align: center;
 }
 
+input {
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+  width: 100%;
+  padding: 1rem;
+}
+
 .post h1, .post h2, .post h3 {
   margin-top: 40px;
   margin-bottom: 20px;

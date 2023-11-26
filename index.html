@@ -5,6 +5,27 @@ description: Meet the church of bits, the place where we pray for the sanctity o
 image: /assets/img/default.png
 ---
 
+<div id="search-container" class="box">
+<input type="text" id="search-input" placeholder="Search...">
+</div>
+
+<ol id="results-container"></ol>
+
+<script src="/search.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+SimpleJekyllSearch({
+searchInput: document.getElementById('search-input'),
+resultsContainer: document.getElementById('results-container'),
+json: '/search.json',
+searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a></li>',
+noResultsText: 'No results found',
+limit: 10,
+fuzzy: false,
+exclude: ['']
+})
+</script>
+
 {% for post in paginator.posts %}
 <div class="post-overview box">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

@@ -2,7 +2,7 @@
 layout: post
 title: '<img class="sprite" src="/assets/gif/fishbone.gif">Introdução ao Anti-Debugging'
 image: /assets/img/anti-debugging-intro.png
-description: 'O primeiro episódio da série "The Debug Breaker", série essa focada no compartilhamento de técnicas de anti-debugging voltadas ao desenvolvimento de malwares. Esse primeiro artigo visa introduzir sobre a análise estática e dinâmica de binários, funcionamento interno dos debuggers (em especial breakpoints) e técnicas de anti-debugging através de interações com essas aplicações.'
+description: 'Primeiro episódio de "The Debug Breaker", uma série de artigos focada no ensino sobre técnicas de anti-debugging voltadas ao desenvolvimento de malwares. Esse primeiro artigo visa introduzir a análise estática e dinâmica de aplicações, funcionamento interno dos debuggers (em especial breakpoints) e técnicas de anti-debugging usando de interações com essas aplicações.'
 ---
 
 # Introdução
