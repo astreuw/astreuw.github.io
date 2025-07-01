@@ -81,11 +81,6 @@ a {
   min-height: 100dvh;
 }
 
-.container {
-  padding-top: 4rem;
-
-}
-
 .site-footer {
   display: flex;
   justify-content: end;
@@ -94,7 +89,6 @@ a {
   margin-top: 4rem;
   padding-bottom: 4rem;
   padding-top: .7rem;
-  margin: 0 auto;
 }
 
 .author-about {
@@ -133,6 +127,10 @@ a {
 
 .site-early {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
   background-color: #33333375;
 
   .site-early-message {
