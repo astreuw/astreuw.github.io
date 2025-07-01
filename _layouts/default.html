@@ -1,0 +1,46 @@
+{%- assign vars = site.data.vars -%}
+
+{%- assign site_title = site.title -%}
+{%- assign site_description = site.description -%}
+
+{%- assign page_title = page.title -%}
+{%- assign page_description = page.description -%}
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:locale" content="{{ page.lang | default: site.lang }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:site_name" content="{{ site_title }}">
+  <meta property="og:type" content="website">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ page_title }}">
+  <meta property="og:image" content="{{ site.banner }}">
+  <meta property="twitter:image" content="{{ site.banner }}">
+
+  <title>{{ site.title }}{% if page_title %} - {{ page_title }}{% endif %}</title>
+  <meta name="description" content="{{ site_description }}">
+</head>
+<body>
+  <div class="site">
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

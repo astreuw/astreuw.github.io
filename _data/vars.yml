@@ -1,0 +1,26 @@
+welcome_message: "Hello, friend."
+
+author:
+  avatar_url: https://avatars.githubusercontent.com/u/193378109
+  name: "Ricardo Costa"
+  description: "Welcome to my blog. I'm <b>Ricardo Costa</b>, also known as <i>astreuw</i>. I'm a computer engineering student with a passion for computers, chemistry and art. I enjoy creating things and learning. I speak Portuguese as my main language, but also English and learning German."
+
+  show_link_labels: false
+  show_link_icons: true
+
+  links:
+    - label: LinkedIn
+      url: https://linkedin.com/in/astreuw
+      icon: fa-brands fa-linkedin
+
+    - label: YouTube
+      url: https://youtube.com/@empoucosbits
+      icon: fa-brands fa-youtube
+
+    - label: GitHub
+      url: https://github.com/astreuw
+      icon: fa-brands fa-github
+
+    - label: Twitter/X
+      url: https://x.com/astreuw
+      icon: fa-brands fa-x-twitter

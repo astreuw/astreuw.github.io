@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+{% assign vars = site.data.vars %}
+
+<div class="author-about">
+  <img src="{{ vars.author.avatar_url }}" alt="author avatar" class="author-avatar">
+  <h1 class="site-intro">{{ vars.welcome_message }}</h1>
+  <p class="author-description">{{ vars.author.description }}</p>
+
+  <br>
+
+  <p class="author-contact-me">If you want to know more, feel free to reach me through my social media:</p>
+
+  <ul class="author-links">
+    {% for link in vars.author.links %}
+      <li class="author-link-item">
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="author-link no-symbol">
+          {% if vars.author.show_link_icons %}<i class="{{ link.icon }}"></i>{% endif %}
+          {% if vars.author.show_link_labels %}{{ link.label }}{% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<br>
+
+<!--
+
+I'm currently working on my theme Quick and the official blog
+so this blog is actually a draft and will soon be updated
+
+This theme is not meant to be used.
+
+-->
+
+<div class="site-early">
+  <img src="https://media1.tenor.com/m/BaCPsmyAmSMAAAAd/sleep-cat.gif" alt="kittens working" class="site-early-image">
+
+  <p class="site-early-message">You arrived too early... Prepare a coffee, brush some binary digits and come back another later... I'm working on something cool, I promise!
+  <br><br>
+  - {{ vars.author.name }}
+  </p>
+</div>
