@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 $container-max-width: 720px;
-$container-width: 1280px;
+$container-width: 90%;
 $font: "Roboto";
 
 :root {
@@ -39,6 +39,8 @@ body {
   line-height: 1.7rem;
 
   background-color: var(--background-color);
+  width: $container-width;
+  max-width: $container-max-width;
 }
 
 h1, h2, h3 {
@@ -80,7 +82,7 @@ a {
 .container {
   margin: 0 auto;
   padding-top: 4rem;
-  width: min($container-max-width, $container-width);
+
 }
 
 .site-footer {
@@ -92,7 +94,6 @@ a {
   padding-bottom: 4rem;
   padding-top: .7rem;
   margin: 0 auto;
-  width: min($container-max-width, $container-width);
 }
 
 .author-about {
