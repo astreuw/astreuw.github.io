@@ -1,0 +1,29 @@
+---
+layout: page
+title: All posts
+description: All posts
+permalink: /posts
+---
+
+{%- assign vars = site.data.vars -%}
+{%- assign posts_count = site.posts | size -%}
+
+{% if posts_count == 0 %}
+<div class="posts-too-early">
+  <img src="/assets/img/eepy-cat.gif" alt="Eepy cat advertiser" class="posts-too-early-image">
+  <p class="posts-too-early-message">
+    {{ vars.posts.too_early_message }}
+    &mdash; {{ vars.author.name }}
+  </p>
+</div>
+{% else %}
+<ul class="posts-list">
+  {% for post in site.posts limit: 3 %}
+  <li class="post-item">
+    <a href="{{ post.url | relative_url }}" class="post-title post-link link-raw">{{ post.title }}</a>
+    <time datetime="{{ post.date }}">{{ post.date | date: "%d-%m-%Y" }}</time>
+    <p class="post-description">{{ post.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

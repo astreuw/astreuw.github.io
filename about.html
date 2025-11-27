@@ -1,0 +1,42 @@
+---
+layout: page
+title: About
+permalink: /about
+---
+
+{%- assign vars = site.data.vars -%}
+
+<div class="container author-about">
+  <img src="{{ vars.author.avatar_url }}" alt="Author avatar" class="author-avatar">
+  <h1>Who am I?</h1>
+  <p class="author-description">{{ vars.author.description }}</p>
+  <br>
+  <p>If you want to know more about what I'm working on, visit <a href="/projects" class="link-raw">projects</a> page.</p>
+</div>
+
+<div class="container author-contact">
+  <h2>Contact</h2>
+  {% if vars.author.contact.email %}
+  <p>E-mail: <a href="mailto:{{ vars.author.email }}" class="link-raw">{{ vars.author.contact.email }}</a></p>
+  {% endif %}
+
+  {% if vars.author.contact.discord %}
+  <p>Discord: {{ vars.author.contact.discord }}</p>
+  {% endif %}
+
+  {% if vars.author.contact.gpg_fingerprint %}
+  <p>GPG Fingerprint: <span class="pre">{{ vars.author.contact.gpg_fingerprint }}</span></p>
+  {% endif %}
+
+  <h2>Reach me</h2>
+  <ul class="author-links">
+    {% for link in vars.author.contact.links %}
+    <li class="author-link-item">
+      <a href="{{ link.url }}" class="author-link">
+        {% if vars.author.contact.show_icons %}<i class="{{ link.icon }}"></i>{% endif %}
+        {% if vars.author.contact.show_labels %}{{ link.label }}{% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+baseurl: ""
+url: ""
+
+collections:
+  posts:
+    output: true
+    permalink: /post/:title
+
+  projects:
+    output: true
+    permalink: /project/:name
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+paginate: 1
+paginate_path: "/posts/:num"
+
+plugins:
+  - jekyll-sitemap
