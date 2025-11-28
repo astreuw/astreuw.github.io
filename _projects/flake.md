@@ -18,9 +18,9 @@ Flake is a minimalist blog theme for Jekyll created by <a href="https://astreuw.
 
 # Screenshots
 Here are a couple of Flake's screenshots:
-![](/assets/img/post/welcome-to-flake/1.png)
-![](/assets/img/post/welcome-to-flake/2.png)
-![](/assets/img/post/welcome-to-flake/3.png)
+![](/assets/img/project/flake/1.png)
+![](/assets/img/project/flake/2.png)
+![](/assets/img/project/flake/3.png)
 
 # TODO
 Flake is currently under development and improvement; feel free to contribute if you wish.
