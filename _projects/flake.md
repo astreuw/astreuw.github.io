@@ -25,7 +25,6 @@ Here are a couple of Flake's screenshots:
 # TODO
 Flake is currently under development and improvement; feel free to contribute if you wish.
 
-- [ ] Support SEO tag: title, description, banner, etc;
 - [ ] Improve mobile support: fix mobile navbar, improve visualization;
 
 # License
