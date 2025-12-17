@@ -1,0 +1,79 @@
+site:
+  lang: en
+  theme: dark
+  title: Ricardo's Kitchen
+  description: I write about computers, poetry and personal projects.
+  banner: /assets/img/site_banner.png
+posts:
+  too_early_message: "You arrived too early for posts... Prepare a coffee, brush some binary digits and come back later... I'm working on something cool, I promise!"
+
+greetings:
+  enabled: true
+  title: Hello, friend!
+  message: Welcome to my blog. I'm <b>Ricardo Costa</b>, also known as astreuw. I'm a computer engineering student with a passion for computers. Here in my space I write about computers, poetry and personal projects. If you want to know more about me, feel free to read <a href="/about">about me</a>.
+
+author:
+  avatar_url: https://avatars.githubusercontent.com/u/193378109
+  name: Ricardo Costa
+  nickname: astreuw
+  description: I'm Ricardo Costa, also known as astreuw. I'm a computer engineering student with a passion for computers, chemistry, and art. I love creating things, learning, and exploring human creativity. Portuguese is my native language, but I also speak English and learning Deutsch. As a developer, I have experience with C, C++, Ruby, and Python, and I've also worked with JavaScript and Node.js.
+
+  contact:
+    show_icons: true
+    show_labels: false
+
+    email: astreuw (at) proton (dot) me
+    discord: "@__writedr"
+    # gpg_fingerprint: 0000 0000 0000 0000 0000  0000 0000 0000 0000 0000
+
+    links:
+      - label: GitHub
+        url: https://github.com/astreuw
+        icon: fa-brands fa-github
+
+      - label: Twitter/X
+        url: https://x.com/astreuw
+        icon: fa-brands fa-x-twitter
+
+      - label: LinkedIn
+        url: https://linkedin.com/in/termist0r
+        icon: fa-brands fa-linkedin
+
+      - label: YouTube
+        url: https://youtube.com/@empoucosbits
+        icon: fa-brands fa-youtube
+
+      - label: YouTube
+        url: https://youtube.com/@astreuw
+        icon: fa-brands fa-youtube
+
+  featured_projects:
+    - title: Em Poucos Bits
+      url: https://www.youtube.com/@empoucosbits
+      icon: fa-brands fa-youtube
+      image: https://yt3.googleusercontent.com/83QS42oWzyUYq9h4v3vFWHw0z6FN6_-JHu3g7nZcVK0LQ-hU7Y-R2PUTJA4ohhEocdkVnq57
+      description: Science and computing in details.
+
+    - title: astreuw
+      url: https://www.youtube.com/@astreuw
+      icon: fa-brands fa-youtube
+      image: https://yt3.googleusercontent.com/jijvsttBErLaHEfdVR8Nm7AEmIPNxO2B7QFyGG_hp18q2-SaeiL1oUQjOIlf99oRYXlwC0KSxxc
+      description: Computing and personal hobbies.
+
+navbar:
+  show_labels: true
+  show_icons: true
+
+  links:
+    - label: Home
+      url: /
+      icon: fa-solid fa-house
+      open_in_page: _self # _self, _blank, ...
+
+    - label: Projects
+      url: /projects
+      icon: fa-solid fa-folder
+
+    - label: About
+      url: /about
+      icon: fa-solid fa-user
