@@ -1,0 +1,66 @@
+{%- assign vars = site.data.vars -%}
+<!DOCTYPE html>
+<html lang="{{ vars.site.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="icon" href="{{ "/favicon.ico" | relative_url }}" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
+
+  <title>{{ vars.site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ vars.site.description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: vars.site.title }}">
+  <meta property="og:description" content="{{ page.description | default: vars.site.description }}">
+  <meta property="og:image" content="{{ page.banner | default: vars.site.banner | absolute_url }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="{{ site.url | remove: 'https://' | remove: 'http://' }}">
+  <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:title" content="{{ page.title | default: vars.site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: vars.site.description }}">
+  <meta name="twitter:image" content="{{ page.banner | default: vars.site.banner | absolute_url }}">
+</head>
+<body class="{{ vars.site.theme | default: light }}">
+  <div class="site">
+    <header class="site-header">
+      <h3 class="site-title">
+        <a href="{{ site.url | relative_url }}" class="link-raw">{{ vars.site.title }}</a>
+      </h3>
+
+      <div class="site-navbar">
+        <ul class="site-navbar-links">
+          {% for link in vars.navbar.links %}
+          <li class="site-navbar-link-item">
+            <a href="{{ link.url | relative_url }}" class="site-navbar-link link-raw link-no-symbol {% if link.url == page.url %}current-page{% endif %}" target="{{ link.open_in_page }}" rel="noopener noreferrer">
+              {% if vars.navbar.show_icons %}<i class="{{ link.icon }}"></i>{% endif %}
+              {% if vars.navbar.show_labels %}{{ link.label }}{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="site-controls">
+        <div class="site-controls-button site-toggle-theme" id="toggle-theme">
+          <i class="fa-solid fa-sun"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <p>Made with <a href="https://astreuw.github.io/project/flake" class="link-raw">Flake</a> &copy; {{ "now" | date: "%Y" }} {{ vars.site.title }}.</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+---
+layout: page
+title: Projects
+description: All of my projects
+permalink: projects
+---
+
+<div class="container projects">
+  <h2>My projects</h2>
+
+  <ul class="projects-list">
+    {% for project in site.projects %}
+    <li class="project-item">
+      <a href="{{ project.url }}" class="project-link link-raw">
+        <h2 class="project-title">
+          {{ project.title }}
+        </h2>
+        <p class="project-description">{{ project.description }}</p>
+        <ul class="project-badges">
+          {% for badge in project.badges %}
+          <li class="project-badge-item"><img src="{{ badge }}" class="image-raw"></li>
+          {% endfor %}
+        </ul>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

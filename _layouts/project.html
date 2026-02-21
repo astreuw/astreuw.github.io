@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="container project-meta">
+  <h1 class="project-title">{{ page.title }}</h1>
+  <p class="project-description">{{ page.description }}</p>
+
+  <ul class="project-badges">
+    {% for badge in page.badges %}
+    <li class="project-badge-item"><img src="{{ badge }}" class="image-raw"></li>
+    {% endfor %}
+  </ul>
+</div>
+
+{{ content }}

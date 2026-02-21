@@ -1,0 +1,57 @@
+---
+layout: page
+---
+
+{%- assign vars = site.data.vars -%}
+
+<div class="container author-greetings">
+  <img src="{{ vars.author.avatar_url }}" alt="Author avatar" class="author-avatar">
+  <div class="author-greetings-meta">
+    <h1 class="author-greetings-title">{{ vars.greetings.title }}</h1>
+    <p class="author-greetings-message">{{ vars.greetings.message }}</p>
+  </div>
+</div>
+
+<div class="container recent-posts">
+  {%- assign posts_count = site.posts | size -%}
+  <h3>Recent Publications</h3>
+
+  {% if posts_count == 0 %}
+  <div class="posts-too-early">
+    <img src="/assets/img/eepy_cat.gif" alt="Eepy cat advertiser" class="posts-too-early-image">
+    <p class="posts-too-early-message">
+      {{ vars.posts.too_early_message }}
+      &mdash; {{ vars.author.name }}
+    </p>
+  </div>
+  {% else %}
+  <ul class="recent-posts posts-list">
+    {% for post in site.posts limit: 3 %}
+    <li class="post-item">
+      <a href="{{ post.url | relative_url }}" class="post-title post-link link-raw">{{ post.title}}</a>
+      <time datetime="{{ post.date }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+      <p class="post-description">{{ post.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  <br>
+
+  <a href="{{ '/posts' | relative_url }}" class="">All posts <i class="fa-solid fa-long-arrow-right"></i></a>
+  {% endif %}
+</div>
+
+<div class="container featured-projects">
+  <h3>Featured Projects</h3>
+
+  <ul class="featured-projects-list">
+    {% for project in vars.author.featured_projects %}
+    <li class="project-item">
+      <a href="{{ project.url }}" class="project-link link-raw link-no-symbol" target="_blank" rel="noopener noreferrer">
+        <img src="{{ project.image }}" alt="Project image" class="project-image">
+        <h2 class="project-title">{{ project.title }}{% if project.icon %} <i class="{{ project.icon }}"></i>{% endif %}</h2>
+        <p class="project-description">{{ project.description }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
