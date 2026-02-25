@@ -1,3 +1,24 @@
-ul, ol {
-  margin-left: 1.5rem;
+.project-content {
+  h1 {
+    border-bottom: var(--default-border);
+    padding-bottom: 1rem;
+  }
+
+  h1:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  blockquote {
+    border-left: 1px solid var(--text-color);
+    padding-left: 1rem;
+  }
+
+  img {
+    border: var(--default-border);
+    margin-top: 1rem;
+  }
+
+  ul {
+    margin-left: 1.5rem;
+  }
 }
