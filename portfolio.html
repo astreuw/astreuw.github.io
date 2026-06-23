@@ -1,0 +1,52 @@
+---
+layout: portfolio
+title: Ricardo Costa - Portfolio
+description: My portfolio
+permalink: /portfolio
+---
+
+{%- assign vars = site.data.vars -%}
+
+<div class="portfolio-container">
+  <aside class="portfolio-sidebar">
+    <div class="profile-card">
+      <div class="profile-card-info">
+        <img src="{{ vars.author.avatar_url }}" alt="My Profile Picture" class="profile-card-img">
+
+        <div class="profile-card-author">
+          <h1>{{ vars.author.name }}</h1>
+          <p>{{ vars.portfolio.resume }}</p>
+          <br>
+
+          <div class="profile-links">
+            <a href="{{ vars.author.github_url }}" target="_blank" class="profile-link link-raw link-no-symbol"><i class="fa-brands fa-github"></i></a>
+            <a href="{{ vars.author.linkedin_url }}" target="_blank" class="profile-link link-raw link-no-symbol"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="{{ vars.author.youtube_url }}" target="_blank" class="profile-link link-raw link-no-symbol"><i class="fa-brands fa-youtube"></i></a>
+            <a href="{{ '/' | relative_url }}" class="profile-link link-raw link-no-symbol"><i class="fa-solid fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-author-info">
+      <h3 class="profile-card-title"><i class="fa-solid fa-user"></i> About me</h3>
+      <p class="">{{ vars.portfolio.description }}</p>
+    </div>
+  </aside>
+
+  <div class="portfolio-content">
+    <div class="projects-list">
+      <span class="container-title"><span class="decoration">*</span> <span class="lighter-text">Main</span><br><span class="darker-text">Projects</span></span>
+
+      {% for project in vars.portfolio.projects %}
+      <a href="{{ project.link }}" class="project-card link-raw link-no-symbol" target="_blank">
+          <img src="{{ project.thumbnail }}" alt="Project Thumbnail" class="project-thumbnail">
+          <div class="project-info">
+            <h1 class="project-title">{{ project.title }}</h1>
+            <p class="project-description">{{ project.description }}</p>
+          </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
