@@ -1,0 +1,8 @@
+plugins:
+  - jekyll-remote-theme
+
+remote_theme: astreuw/flake
+
+title: "Testing"
+description: "Hi there"
+url: "https://astreuw.github.io"
