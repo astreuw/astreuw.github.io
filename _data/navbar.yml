@@ -1,0 +1,24 @@
+show_labels: true
+show_icons: true
+
+links:
+  - label: Home
+    url: /
+    icon: lucide:house
+    open_in_page: _self
+
+  - label: Posts
+    url: /posts
+    icon: lucide:newspaper
+
+  - label: Portfolio
+    url: /portfolio
+    icon: lucide:folder
+
+  - label: Projects
+    url: /projects
+    icon: lucide:git-branch
+
+  - label: About
+    url: /about
+    icon: lucide:user

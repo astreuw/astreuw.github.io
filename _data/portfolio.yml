@@ -1,0 +1,90 @@
+title: Portfolio
+bio: "Full Stack Developer<br>Computer Engineering Student"
+resume: Passionate about creating and everything about computers.
+
+status:
+  enabled: true
+  label: Open to Work
+
+contact_limit: 3
+about_title: About
+projects_title: Main Projects
+stack_title: What I make things with
+
+stack:
+  - category: Languages
+    items:
+      - name: Python
+        icon: si:python
+
+      - name: Ruby
+        icon: si:ruby
+
+      - name: JavaScript
+        icon: si:javascript
+
+      - name: Shell Script
+        icon: si:gnubash
+
+      - name: C++
+        icon: si:cplusplus
+
+      - name: C
+        icon: si:c
+
+      - name: PHP
+        icon: si:php
+
+  - category: Backend
+    items:
+      - name: Node.js
+        icon: si:nodedotjs
+
+      - name: PostgreSQL
+        icon: si:postgresql
+
+      - name: Django
+        icon: si:django
+
+      - name: Flask
+        icon: si:flask
+
+      - name: Sinatra
+        icon: si:ruby
+
+  - category: DevOps & Tools
+    items:
+      - name: Git
+        icon: si:git
+
+      - name: Docker
+        icon: si:docker
+
+      - name: VirtualBox
+        icon: si:virtualbox
+
+projects:
+  - title: Flake
+    thumbnail: /assets/img/flake-portfolio-thumbnail.png
+    description: A minimalist blog theme for Jekyll
+    link: https://github.com/astreuw/flake
+    stack:
+      - name: Jekyll
+        icon: si:jekyll
+
+      - name: Tailwind CSS
+        icon: si:tailwindcss
+
+      - name: JavaScript
+        icon: si:javascript
+
+  - title: In a Few Bits
+    thumbnail: /assets/img/inafewbits-portfolio-thumbnail.png
+    description: Science and Computing in a Few Bits
+    link: https://youtube.com/@empoucosbits
+    stack:
+      - name: DaVinci Resolve
+        icon: si:davinciresolve
+
+      - name: Manim
+        icon: si:python

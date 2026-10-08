@@ -1,0 +1,32 @@
+title: "Ricardo's Kitchen"
+description: "I write about computers, poetry and personal projects."
+url: "https://astreuw.github.io"
+baseurl: ""
+
+remote_theme: astreuw/flake@main
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+collections:
+  posts:
+    output: true
+    permalink: /post/:title
+
+  projects:
+    output: true
+    permalink: /project/:name
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+paginate: 5
+paginate_path: "/posts/:num"
+
+exclude:
+  - README.md
