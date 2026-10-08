@@ -65,7 +65,7 @@ stack:
 
 projects:
   - title: Flake
-    thumbnail: /assets/img/flake-portfolio-thumbnail.png
+    thumbnail: /assets/img/portfolio/flake.png
     description: A minimalist blog theme for Jekyll
     link: https://github.com/astreuw/flake
     stack:
@@ -79,7 +79,7 @@ projects:
         icon: si:javascript
 
   - title: In a Few Bits
-    thumbnail: /assets/img/inafewbits-portfolio-thumbnail.png
+    thumbnail: /assets/img/portfolio/in-a-few-bits.png
     description: Science and Computing in a Few Bits
     link: https://youtube.com/@empoucosbits
     stack:
@@ -88,3 +88,20 @@ projects:
 
       - name: Manim
         icon: si:python
+
+  - title: Letrado
+    thumbnail: /assets/img/portfolio/letrado.png
+    description: Word games to play daily, solo or with friends in real-time groups.
+    link: https://letrado.fun/
+    stack:
+      - name: Node.js
+        icon: si:nodedotjs
+
+      - name: Next.js
+        icon: si:react
+
+      - name: React
+        icon: si:react
+
+      - name: PostgreSQL
+        icon: si:postgresql
