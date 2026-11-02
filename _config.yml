@@ -20,6 +20,10 @@ collections:
     output: true
     permalink: /project/:name
 
+  poems:
+    output: true
+    permalink: /poem/:name
+
 markdown: kramdown
 highlighter: rouge
 kramdown:

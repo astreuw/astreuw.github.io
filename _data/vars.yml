@@ -23,7 +23,7 @@ greetings:
 author:
   avatar_url: https://avatars.githubusercontent.com/u/193378109
   name: Ricardo Costa
-  description: I'm Ricardo Costa, also known as astreuw. I'm a computer engineering student passionate about computers, chemistry, and art. I love to create, learn, and explore human creativity. As a native Portuguese speaker, I also write poetry and enjoy exploring the boundaries of language. I'm currently learning C++, but I am also experienced in Python, Ruby, C, JavaScript, and Shell Script. My interests in computing range from low-level programming to malware development and red teaming, and I am fascinated by obfuscation algorithms. Also, I enjoy design, content creation, video editing with DaVinci Resolve and CapCut, and image editing with Photoshop. Feel free to see my media projects on my <a href="/portfolio">portfolio</a>. Outside this 8-bit world, I also like to study biology, chemistry, and anthropology.
+  description: I'm Ricardo Costa, also known as astreuw. I'm a computer engineering student passionate about computers, chemistry, and art. I love to create, learn, and explore human creativity. As a native Portuguese speaker, I also write poetry and enjoy exploring the boundaries of language, you can read my <a href="/poems">poems</a> (only in Portuguese). I'm currently learning C++, but I am also experienced in Python, Ruby, C, JavaScript, and Shell Script. My interests in computing range from low-level programming to malware development and red teaming. Also, I enjoy design, content creation. Feel free to see my media projects on my <a href="/portfolio">portfolio</a>.
 
   contact:
     show_icons: true
